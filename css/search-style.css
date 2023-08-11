@@ -26,6 +26,9 @@ body{
     float: right;
   
 }
+input[type="checkbox"]{
+    display: none;
+}
 .navigation ul {
     display: block;
 }
@@ -96,7 +99,10 @@ nav .fa-burger{
     position: absolute;
     display: none;
     cursor: pointer;
+    z-index:4;
+    
 }
+
 .main{
     display: flex;
     width: 100%;
@@ -104,6 +110,7 @@ nav .fa-burger{
     justify-content: center;
     align-items: center;
 }
+
 
 .search-cont{
     border: 2px solid #FFF0F5;
@@ -181,13 +188,16 @@ nav .fa-burger{
         display:none;
 
     }
+   
     
 }
 @media (max-width:858px){
     nav .fa-burger{
         display:block;
+        font-size: 30px;
 
     }
+    
     ul{
         position: fixed;
         width: 25%;
@@ -206,6 +216,7 @@ nav .fa-burger{
         display: block;
         margin: 20px;
     }
+    
    
    /* .apps {
     position: relative;
@@ -226,6 +237,7 @@ nav .fa-burger{
    #check{
     font-size: 25px;
     cursor: pointer;
+    display: none;
    }
    #check:checked ~ ul{
     left: 0;
